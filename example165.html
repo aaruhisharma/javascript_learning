@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box{ padding: 10px; 
+           border: 1px solid black;
+           }
+    
+    </style>
+</head>
+<body>
+    <h1>About jQuery</h1>
+    <div id="box" class="test">
+       <h2>Test Box2</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus obcaecati delectus earum tempore nobis modi dolorem aspernatur similique veniam at.</p>
+    </div>
+    <ul id="list">
+        <li>orange</li>
+        <li class="test">Banana</li>
+        <li>Grapes</li>
+        <li class="test">Apple</li>
+        <li>Guava</li>
+    </ul>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#list").css("border","2px solid blue");
+        })
+    </script>
+</body>
