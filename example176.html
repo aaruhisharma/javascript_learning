@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #box{
+            background-color: rgb(148, 127, 255);
+            padding: 12px;
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Mouse Events</h1>
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius, earum eligendi aut hic necessitatibus atque adipisci voluptatum obcaecati distinctio amet ea corrupti fugit rem culpa. Dolorum blanditiis totam sed!</p>
+    </div>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#box').click(function(){
+        $('#box').css('background-color','green');
+        });
+        });
+    </script>
+</body>
+</html>
