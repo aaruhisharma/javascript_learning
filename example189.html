@@ -16,7 +16,7 @@
     </style>
 </head>
 <body>
-   <h1>About Mouse Event</h1> 
+   <h1>About Keyboard Events</h1> 
    <div id="box" class="test">
     <h2>test Box</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio sapiente animi ipsum omnis beatae. Nulla unde optio tempore animi labore incidunt, officiis quo vero asperiores soluta! Odit soluta quisquam aut.</p>
@@ -24,13 +24,16 @@
    <script src="./js/jQuery.js"></script>
    <script>
     $(document).ready(function(){
-    $('#box').click(function(){
-    $('#box').css('background-color','green');
+    $('body').keypress(function(){
+    $(this).css('background-color', 'Orange');
     });
-    $('#box').dbclick(function(){
-    $('#box').css('background-color','blue');  
-    })
-});
+    $('body').keyup(function(){
+    $(this).css('background-color','yellow');
+    });
+    $('body').keydown(function(){
+    $(this).css('background-color','lime');
+    });
+    });
    </script>
 </body>
 </html>
