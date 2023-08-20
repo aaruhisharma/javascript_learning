@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family:'Courier New', Courier, monospace;
+        }
+        .red{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+ <h1>About Set Methods</h1>  
+ <div id="box" class="test">
+  <h2>Test box</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea ex saepe vitae, laborum, soluta dolorum velit porro ducimus consectetur, assumenda animi similique non! Iure laboriosam necessitatibus sed, nihil accusantium impedit!</p>
+ </div>
+ <br>
+ <button id="clickbutton">Set Value</button>
+ <script src="./js/jQuery.js"></script>
+ <script>
+    $(document).ready(function(){
+    $('#clickbutton').click(function(){
+    $('#box h2').text("Hello Aaruhi");
+    });
+    });
+ </script>
+</body>
+</html>
