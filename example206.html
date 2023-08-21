@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #box{
+            width:70%;
+            height: 200px;
+            background: pink;
+            padding: 10px;
+            border: 1px solid black;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Window events</h1>
+    <div id="box">Test Box</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia rerum, accusantium exercitationem officiis sunt repellendus reprehenderit vel consequatur aliquam non molestiae dolorum praesentium nihil tempore dolore necessitatibus animi perspiciatis aspernatur.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime tempora blanditiis ducimus nostrum iure enim distinctio velit id expedita.</p>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(window).load(function(){
+            console.log("You are Scrolling");
+        });
+        });
+    </script>
+</body>
+</html>
