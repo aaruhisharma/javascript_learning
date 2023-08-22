@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #box{
+            background-color: pink;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Get Methods</h1>
+    <div id="box" class="test  abc">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel numquam reiciendis saepe facilis quam culpa fugit officiis ut exercitationem! Iusto.</p>
+    </div>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+        var a =$('#box').html();
+        console.log(a);
+        })
+    </script>
+</body>
+</html>
