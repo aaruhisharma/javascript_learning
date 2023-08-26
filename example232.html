@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: rgb(10, 190, 236);
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery After and Before Methods</h1>
+    <div id="box">
+     <h2>Test Box</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo perferendis quidem earum. Fuga aspernatur optio sunt, ab neque vel.</p>
+    </div>
+
+    <br>
+    <button id="afterBtn">After</button>
+    <button id="beforeBtn">Before</button>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#beforeBtn").click(function(){
+        $("#box").before("<h1>Welcome Aaruhi Sharma</h1>");
+        });
+        $("#afterBtn").click(function(){
+        $("#box").after("<h1>Welcome Aaruhi Sharma</h1>");
+        });
+        });
+    </script>
+</body>
+</html>
