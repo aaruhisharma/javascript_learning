@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            border: 2px solid black;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+   <h1>jQuery ReplaceWith() and ReplaceAll()</h1> 
+   <div id="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur similique nobis quas illum consequatur exercitationem inventore, rem modi architecto quia.</p>
+   </div>
+   <br>
+   <button id="wrapBtn">wrap</button>
+   <button id="unwrapBtn">unwrap</button>
+   <script src="./js/jQuery.js"></script>
+   <script>
+    $(document).ready(function(){
+    $('#unwrapBtn').click(function(){
+    $('#box p').unwrap()
+    })
+    });
+   </script>
+</body>
+</html>
