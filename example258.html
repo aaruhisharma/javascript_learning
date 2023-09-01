@@ -9,27 +9,32 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         #box{
-            border: 2px solid black;
-            background-color: azure;
+            border: 5px solid black;
+            background-color:green;
+        }
+        #test{
+            background-color: pink;
+            padding: 5px;
+        }
+        .red{
+            color: blue;
         }
     </style>
 </head>
 <body>
-    <h1>jQuery Wrap() and unwrap()</h1> 
+    <h1>jQuery width and height</h1> 
    <div id="box">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur similique nobis quas illum consequatur exercitationem inventore, rem modi architecto quia.</p>
    </div>
    <br>
-   <button id="wrapBtn">wrap</button>
-   <button id="unwrapBtn">unwrap</button>
+   <button id="widthBtn">width</button>
+   <button id="heightBtn">height</button>
    <script src="./js/jQuery.js"></script>
    <script>
     $(document).ready(function(){
-    $('#wrapBtn').click(function(){
-    $('#box p').wrap('<h1></h1>')
-    });
-    $('#unwrapBtn').click(function(){
-    $('#box p').unwrap()
+    $('#widthBtn').click(function(){
+    console.log($('#box').width());
+    $('#box').width('<div id="test"></div>');
     });
     });
    </script>
