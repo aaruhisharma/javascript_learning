@@ -22,19 +22,22 @@
     </style>
 </head>
 <body>
-    <h1>jQuery width and height</h1> 
+    <h1>jQuery hide() and show()</h1> 
    <div id="box">
     <h2>Test Box</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur similique nobis quas illum consequatur exercitationem inventore, rem modi architecto quia.</p>
    </div>
    <br>
-   <button id="widthBtn">width</button>
-   <button id="heightBtn">height</button>
+   <button id="hideBtn">Hide</button>
+   <button id="showBtn">show</button>
    <script src="./js/jQuery.js"></script>
    <script>
     $(document).ready(function(){
-    $('#widthBtn').click(function(){
-    console.log($('#box').width());
+    $('#hideBtn').click(function(){
+    console.log($('#box').hide());
+    });
+    $('#showBtn').click(function(){
+    console.log($('#box').show());
     });
     });
    </script>
