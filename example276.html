@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            border: 5px solid black;
+            background-color:rgb(229, 49, 184);
+        }
+        #test{
+            background-color: pink;
+            padding: 5px;
+        }
+        .red{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>slide method()</h1> 
+   <div id="box">
+    <h2>Test Box</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur similique nobis quas illum consequatur exercitationem inventore, rem modi architecto quia.</p>
+   </div>
+   <br>
+   <button id="slideUpBtn">slideUp</button>
+   <button id="slideDownBtn">slideDown</button>
+   <button id="slideToggleBtn">slideToggle</button>
+   <script src="./js/jQuery.js"></script>
+   <script>
+    $(document).ready(function(){
+    $('#slideUpBtn').click(function(){
+    $('#box').slideUp();
+    });
+    });
+   </script>
+</body>
+</html>
