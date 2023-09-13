@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,21 +30,22 @@
     </style>
 </head>
 <body>
-    <h1>page X And page Y</h1> 
-   <div id="result">
+    <h1>jQuery Event.type property</h1> 
+   <div id="box">
    </div>
-   <ul>
-    <li>Orange</li>
-    <li>Apple</li>
-    <li>Banana</li>
-    <li>Grapes</li>
-   </ul>
+   <br>
+   <input type="text" id="inputbox">
+   <br>
+    <h2></h2>
    <script src="./js/jQuery.js"></script>
    <script>
     $(document).ready(function(){
-    $(document).mousemove(function(event){
-     $('#result').text(event.pagey)  
-    });
+     $('#box').on("mouseover mouseout mousedown",function(event){
+        $('h2').html( event.type + ":"+  event.which)
+     });
+     $('#inputbox').on("keydown",function(){
+        $('h2').html( event.type + ":"+  event.which)
+     });
     });
    </script>
 </body>

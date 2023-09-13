@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,21 +30,16 @@
     </style>
 </head>
 <body>
-    <h1>page X And page Y</h1> 
-   <div id="result">
+    <h1>jQuery Event.type property</h1> 
+   <div id="box">
    </div>
-   <ul>
-    <li>Orange</li>
-    <li>Apple</li>
-    <li>Banana</li>
-    <li>Grapes</li>
-   </ul>
+    <h2></h2>
    <script src="./js/jQuery.js"></script>
    <script>
     $(document).ready(function(){
-    $(document).mousemove(function(event){
-     $('#result').text(event.pagey)  
-    });
+     $('#box').on("click dbclick mouseover mouseout",function(event){
+        $('h2').html("Event:" + event.type)
+     })
     });
    </script>
 </body>
