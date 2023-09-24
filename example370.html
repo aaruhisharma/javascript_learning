@@ -23,7 +23,7 @@
         <h2>Main Outer</h2>
     </div>
      <div id="inner">
-        <h2>Inner</h2>
+        <h2 class="test2">Inner</h2>
         <div>A</div>
         <div>B</div>
         <div id="child-c">C</div>
@@ -35,7 +35,7 @@
     <script src="./js/jQuery.js"></script>
     <script>
         $(document).ready(function(){
-        $('#child-c').prevAll().css('background','blue');
+        $('#child-c').prevAll('.test2').css('background','blue');
         })
     </script>
 </body>

@@ -16,7 +16,7 @@
     </style>
 </head>
 <body>
-    <h1>jQuery prevAll</h1>
+    <h1>jQuery nextAll</h1>
     <div id="main-outer">
        <h2 class="test">Main Outer</h2>
        <div id="outer"> 
@@ -35,7 +35,7 @@
     <script src="./js/jQuery.js"></script>
     <script>
         $(document).ready(function(){
-        $('#child-c').prevAll().css('background','blue');
+        $('#child-c').nextAll('.test').css('background','blue');
         })
     </script>
 </body>
