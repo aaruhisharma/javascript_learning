@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box{ padding: 10px; 
+           border: 1px solid black;
+           }
+    
+    </style>
+</head>
+<body>
+    <h1>jQuery filtering metods</h1>
+    <div id="first">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatum natus dolores.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, necessitatibus consequuntur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatum natus dolores.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, necessitatibus consequuntur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatum natus dolores.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, necessitatibus consequuntur!</p>
+    </div>
+     <ul>
+        <li>Lion</li>
+         <li>Tiger</li>
+         <li>Elephant</li>
+         <li>Cow</li>
+     </ul>
+     <div id="second">
+        <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci molestiae sint ea temporibus neque dolore mollitia quia dolorum voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, placeat illo. Quis!</p>
+     </div>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#second p').first().css('background','orange');
+        });
+    </script>
+</body>
+</html>

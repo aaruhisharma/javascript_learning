@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            border: 1px solid black;
+            background-color:rgb(202, 202, 18);
+            width: 80%;
+            height: 80%;
+            padding: 10px;
+            position: relative;
+        }
+        #test{
+            background-color: pink;
+            padding: 5px;
+        }
+        .red{
+            color: blue;
+        }
+        .test{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Event.type property</h1> 
+   <div id="box">
+   </div>
+   <br>
+   <input type="text" id="inputbox">
+   <br>
+    <h2></h2>
+   <script src="./js/jQuery.js"></script>
+   <script>
+    $(document).ready(function(){
+     $('#box').on("mouseover mouseout mousedown",function(event){
+        $('h2').html( event.type + ":"+  event.which)
+     });
+     $('#inputbox').on("keydown",function(){
+        $('h2').html( event.type + ":"+  event.which)
+     });
+    });
+   </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+   <h1>jQuery Empty and Remove methods</h1> 
+   <div id="box">
+    <h2>Test Box</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate esse reprehenderit eius, similique maxime quos deleniti vero consectetur itaque sequi nisi ullam beatae? Dolorem aspernatur impedit facere accusantium. Possimus maiores minus officiis perspiciatis sunt quia neque repudiandae, porro illum rem? Nihil magnam consequuntur culpa repellat autem sequi aliquid soluta est!</p>
+   </div>
+   <br>
+   <button id="emptyBtn">Empty</button>
+   <button id="removeBtn">Remove</button>
+   <script src="./js/jQuery.js"></script>
+   <script>
+    $(document).ready(function(){
+    $("#emptyBtn").click(function(){
+    $("#box").empty()
+    });
+    });
+   </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            border: 2px solid black;
+            background-color: azure;
+        }
+        #test{
+            background-color: pink;
+            padding: 5px;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery WrapAll() and wrapInner()</h1> 
+   <div id="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur similique nobis quas illum consequatur exercitationem inventore, rem modi architecto quia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur similique nobis quas illum consequatur exercitationem inventore, rem modi architecto quia.</p>
+   </div>
+   <br>
+   <button id="wrapAllBtn">wrapAll</button>
+   <button id="wrapInnerBtn">wrapInner</button>
+   <script src="./js/jQuery.js"></script>
+   <script>
+    $(document).ready(function(){
+    $('#wrapInnerBtn').click(function(){
+    $('p').wrapInner('<span class="red"></span>');
+    });
+    });
+   </script>
+</body>
+</html>

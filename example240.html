@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #box{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery appendto and prependto methods</h1>
+    <div id="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, provident! Blanditiis, reprehenderit aperiam possimus repudiandae accusantium tempore doloremque dicta odio expedita enim reiciendis nihil corporis dolores aliquam assumenda ipsa iusto fugiat quos cumque ratione veritatis, nam cum fuga. Maxime, officia?</p>
+    </div>
+    <br>
+    <button id="appendBtn">AppendTo</button>
+    <button id="prependBtn">PrependTo</button>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#prependBtn").click(function(){
+        $('<h2>Welcome to jQuery lecture</h2>').prependTo('#box');
+        });
+        });
+    </script>
+</body>
+</html>

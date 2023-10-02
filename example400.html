@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box{ padding: 10px; 
+           border: 1px solid black;
+           }
+    
+    </style>
+</head>
+<body>
+    <h1>jQuery Descendant Methods</h1>
+    <div id="main-outer">
+       <h2>Main Outer</h2>
+       <div id="outer"> 
+        <h2>Main Outer</h2>
+    </div>
+     <div id="inner">
+        <h2>INNER</h2>
+        <div class="test1">Hello</div>
+        <div class="test2">Good evening</div>
+        <div class="test">Everybody</div>
+        <div class="test3">How Are You</div>
+     </div>
+     </div>
+    </div>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#inner').find('.test').css('border','2px solid black');
+        $('#inner').find('.test2').css('color','red');
+        $('#inner').find('.test3').css('color','orange');
+        $('#inner').find('.test').css('background','green');
+        })
+    </script>
+</body>
+</html>

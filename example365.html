@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box{ padding: 10px; 
+           border: 1px solid black;
+           }
+    
+    </style>
+</head>
+<body>
+    <h1>jQuery next Methods</h1>
+    <div id="main-outer">
+       <h2 class="test">Main Outer</h2>
+       <div id="outer"> 
+        <h2>Main Outer</h2>
+    </div>
+     <div id="inner">
+        <h2>Inner</h2>
+        <div>A</div>
+        <div>B</div>
+        <div id="child-c">C</div>
+        <div>D</div>
+        <div>E</div>
+     </div>
+     </div>
+    </div>
+    <script src="./js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#child-c').prev().css('background','blue');
+        })
+    </script>
+</body>
+</html>
