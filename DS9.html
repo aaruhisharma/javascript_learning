@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterative Binary Search</title>
+ </head>
+ <body>
+    <script>
+        let data = [15,9,13,17];
+        let search = 17;
+        let start = 0;
+        let end = data.length-1;
+        let position = undefined;
+        while(start <=end){
+            let mid = Math.floor((start+end)/2);
+            // console.length(data[mid]);
+        if (data[mid]===search){
+            position = mid;
+            break;
+        }
+        else if (data[mid] < search){
+          start = mid + 1;
+        }
+        else{
+            end = mid-1;
+        }
+    console.log(position);
+    }
+    </script>
+ </body>
+ </html>

@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>linear search</title>
 </head>
 <body>
     <script>
-        let arr = [2,4,0,1,9];
-        let find = 9;
-        let pos = undefined;
+        let arr=[0,5,6,8,9,23,22,34,55,67,87,98,96,55,45,33,12];
+        let search = 96;
+        let index = undefined;
         for(let i=0; i<=arr.length; i++){
-            if(arr[i]==find){
-                pos=i;
+            if(arr[i]==search){
+                index=i;
                 break;
-            }
         }
-        console.log(pos);
+    }
+    console.log(index);
     </script>
 </body>
 </html>
