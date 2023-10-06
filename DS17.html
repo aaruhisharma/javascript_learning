@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Push operation</title>
+</head>
+<body>
+    <script>
+        let element = [];
+        let currentSize = element.length;
+        let max=10;
+        function push(newVal){
+         if(currentSize>=max){
+            alert("stack is full.You can not add" +newVal);
+         }
+         element[currentSize] = newVal;
+         currentSize +=1;
+        }
+        push(20);
+        push(30);
+        push(60);
+        push(68);
+        push(23);
+        push(34);
+        push(66);
+        push(90);
+        console.log(element);
+    </script>
+</body>
+</html>
