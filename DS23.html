@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue</title>
+</head>
+<body>
+    <script>
+    let queue = [];
+    let currentSize = queue.length;
+    let maxSize = 10;
+    function enqueue(newelement){
+        if(currentSize>=maxSize){
+        alert("Queue is already full");
+        }
+        else{
+            queue[currentSize]=newelement;
+            currentSize++;
+        }
+    }
+    enqueue(13)
+    enqueue(25)
+    enqueue(26)
+    enqueue(67)
+    enqueue(15)
+    enqueue(20)
+    enqueue(29)
+    enqueue(69)
+    console.log(queue);
+    </script>
+</body>
+</html>
