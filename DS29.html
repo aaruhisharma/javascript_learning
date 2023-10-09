@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting in descending order</title>
+</head>
+<body>
+  <script>
+    let data = [40,20,50,80,70,100,900,800,600,400,100];
+    for(let i=0; i<data.length; i++){
+     for(let j=0; j<data.length; j++){
+     if(data[j]<data[j+1]){
+      let temp = data[j];
+      data[j] = data[j+1];
+      data[j+1] = temp;
+     }
+   }
+}
+console.log(data);
+  </script>   
+</body>
+</html>
