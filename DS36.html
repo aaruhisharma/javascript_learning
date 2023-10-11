@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Dequeue operation</title>
+</head>
+<body>
+  <script>
+    let data = [];
+    let currentSize=data.length;
+    let maxSize=7;
+    function enqueue(newVal){
+     if(currentSize>=maxSize){
+        alert("queue is full")
+     }else{
+        data[currentSize]=newVal;
+        currentSize++;
+     }
+    }
+    function display(){
+        console.log(data);
+    }
+    function dequeue(){
+        if(currentSize>0){
+            for(let i =0; i<data.length; i++){
+                // console.log(queue[i])
+                data[i] = data[i+1]
+            }
+            currentSize--;
+            data.length = currentSize;
+        }else{
+            alert("queue is already empty")
+        }
+    }
+    enqueue(50);
+    enqueue(51);
+    enqueue(52);
+    enqueue(53);
+    dequeue()
+    dequeue()
+    display()
+  </script>  
+</body>
+</html>
