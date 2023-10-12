@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iterative Binary Search</title>
+  </head>
+  <body>
+    <script>
+      let item = [10, 20, 30, 40, 50, 60,70,80,98,300];
+      let start = 0;
+      let end = item.length - 1;
+      let find = 70;
+      let position = undefined;
+       while (start<=end) {
+        let mid = Math.floor((start + end) / 2);
+        if (item[mid] === find) {
+        position =mid;
+          break;
+        } else if (item[mid] < find) {
+          start = mid + 1;
+        } else {
+          end = mid-1;
+        }
+      }
+      console.log(position);
+    </script>
+  </body>
+</html>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Search</title>
+  </head>
+  <body>
+    <script>
+      let data = [23, 24, 25, 26, 34, 5, 8, 98];
+      let find = 34;
+      let pos = undefined;
+      for (let i = 0; i < data.length; i++) {
+        if (data[i] == find) {
+          pos = i;
+          break;
+        }
+      }
+      console.log(pos);
+    </script>
+  </body>
+</html>
