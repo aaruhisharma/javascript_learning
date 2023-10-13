@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recursive Binary Search</title>
+  </head>
+  <body>
+    <script>
+      let data = [10, 11, 12, 13, 14, 15, 16, 19, 30];
+      let start = 0;
+      let end = data.length - 1;
+      let find = 15;
+      let position = undefined;
+      function recursiveBinary(data, start, end) {
+        mid = Math.floor((start + end) / 2);
+        if (data[mid] === find) {
+          position = mid;
+          return true;
+        } else if (data[mid] < find) {
+          recursiveBinary(data, mid + 1, end);
+        } else {
+          recursiveBinary(data, start, mid - 1);
+        }
+      }
+      recursiveBinary(data, start, end);
+      console.log(position);
+    </script>
+  </body>
+</html>
