@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort in Descending Order</title>
+</head>
+<body>
+    <script>
+        let item=[20,12,53,56,5,3,30];
+        function selectionSort(item){
+        let minId;
+        for(let i=0; i<item.length;i++){
+         minId=i;
+        for(let j=i+1; j<item.length;j++){
+            if(data[j]>data[minId]){
+                minId=j;
+            }
+        }
+        let temp=item[minId];
+        item[minId]=item[i];
+        item[i]=temp;
+        }
+        
+    }
+        selectionSort(data);
+    console.log(item);
+    </script>
+</body>
+</html>
