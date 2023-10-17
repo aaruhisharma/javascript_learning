@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Anagram</title>
+  </head>
+  <body>
+    <script>
+      function checkAnagram(str1,str2){
+          let objstr1={};
+          if(str1.length !==str2.length){
+          return false
+          }
+          for(ch of str1){
+              objstr1[ch]=(objstr1[ch]||0)+1
+              }
+              console.log(objstr1)
+              for(ch of str2)
+              console.log(objstr1[ch])
+          }
+      console.log(checkAnagram("Butterfly","Butterfly"))
+    </script>
+  </body>
+</html>
