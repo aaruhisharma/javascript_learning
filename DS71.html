@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add values in an Object</title>
+</head>
+<body>
+    <script>
+        let data={
+            name:"Aaruhi Sharma",
+            age:23,
+            course:"Msc in Computer Science",
+            email:"aarohisharma1144@gmail.com",
+            getName:function(){
+                return this.name;
+            }
+        }
+        data.contact=9801714142
+        data.department="Computer Science"
+        data.university="Central University Of South Bihar"
+        console.log(data)
+        console.log(data.getName())
+    </script>
+</body>
+</html>
